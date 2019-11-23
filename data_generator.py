@@ -45,8 +45,6 @@ class DataGenerator(keras.utils.Sequence):
         """Generates data containing batch_size samples"""  # x : (n_samples, *dim, n_channels)
         # Initialization
         x = np.empty((self.batch_size, *self.input_dim, self.input_channels))
-
-        # TODO: change these params to reflect gt image
         y = np.empty((self.batch_size, *self.output_dim, self.output_channels))
 
         # Generate data
