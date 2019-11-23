@@ -69,14 +69,11 @@ pool4 = MaxPooling2D(pool_size=(2, 2), padding="same")(conv4)
 conv5 = Conv2D(512, (3, 3), activation="relu")(pool4)
 conv5 = Conv2D(512, (3, 3), activation="relu")(conv5)
 
-# conv2dtranspose
+# Conv2DTranspose
 # concat
 # convolution
 
-# Conv2DTranspose(256, (3, 3), activation="relu")
-# concatenate(axis=3)
-
-up6 = Conv2DTranspose(256, (3, 3), strides=(2, 2))(conv5)
+up6 = Conv2DTranspose(256, (3, 3), strides=(2, 2), padding="same")(conv5)
 concat6 = concatenate([up6, conv4], axis=3)
 conv6 = Conv2D(256, (3, 3), activation="relu")(concat6)
 conv6 = Conv2D(256, (3, 3), activation="relu")(conv6)
