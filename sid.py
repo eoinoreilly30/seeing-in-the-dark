@@ -72,9 +72,13 @@ conv5 = Conv2D(512, (3, 3), activation="relu")(conv5)
 # Conv2DTranspose
 # concat
 # convolution
+print(conv4.shape)
+up6 = Conv2DTranspose(256, (3, 3), strides=(2, 2))(conv5)
+# concat6 = concatenate([up6, conv4], axis=3)
 
-up6 = Conv2DTranspose(256, (3, 3), strides=(2, 2), padding="same")(conv5)
-concat6 = concatenate([up6, conv4], axis=3)
+model = Model(input=input_layer, output=up6)
+model.summary()
+
 conv6 = Conv2D(256, (3, 3), activation="relu")(concat6)
 conv6 = Conv2D(256, (3, 3), activation="relu")(conv6)
 
@@ -96,8 +100,4 @@ conv9 = Conv2D(32, (3, 3), activation="relu")(conv9)
 conv10 = Conv2D(12, (1, 1))(conv9)
 
 output_layer = SubpixelConv2D(conv10.shape, 2)(conv10)
-
-model = Model(input=input_layer, output=conv10)
-
-model.summary()
 
