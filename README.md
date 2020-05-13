@@ -11,7 +11,7 @@ their corresponding bright long-exposed images
 
 ## Results
 <p float="left">
-  <img src="https://github.com/eoinoreilly30/seeing-in-the-dark/blob/master/images/10016_input.png" width="425" />
+  <img src="https://github.com/eoinoreilly30/seeing-in-the-dark/blob/master/images/10016_input.png" width="425" height="285"/>
   <img src="https://github.com/eoinoreilly30/seeing-in-the-dark/blob/master/images/10016.png" width="425" />
 </p>
 
