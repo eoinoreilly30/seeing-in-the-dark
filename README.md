@@ -5,7 +5,7 @@ Implementation of the work produced by Chen et al. https://arxiv.org/abs/1805.01
 
 Dataset: [Sony](https://storage.googleapis.com/isl-datasets/SID/Sony.zip) (25GB) [Fujifilm](https://storage.googleapis.com/isl-datasets/SID/Fuji.zip) (52GB)
 
-[Some more outputs](https://drive.google.com/drive/folders/1vM49_TBXOlz_gdPvMnM6j69_93koBFet?usp=sharing)
+Some more [outputs](https://drive.google.com/drive/folders/1vM49_TBXOlz_gdPvMnM6j69_93koBFet?usp=sharing)
 
 ## Pipeline
 A fully convolutional neural network was trained on a dataset of dark short-exposed images and 
